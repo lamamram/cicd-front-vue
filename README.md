@@ -2,4 +2,4 @@
 
 ## AGILITE & DEVOPS
 
-1. cf agile.md
+1. cf [agile.md](./parts/agile.md)
