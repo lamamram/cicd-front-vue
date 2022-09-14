@@ -13,7 +13,7 @@
    * incréments (sous ensembles fonctionnels)
 
 2. équipe
-   * culture de collaboration
+   * culture de collaboration[^1]
    * multidisciplinarité
    * adaptation au changement
 
@@ -26,3 +26,7 @@
 
 * schéma
 ![alt text](https://www.bocasay.com/wp-content/uploads/2022/02/Scrum-process-schema-FR-small.webp "SCRUM")
+
+[^1]: 
+  Cf les notions de culture d'entreprise, de dette culturelle,
+  et de leadership devops
