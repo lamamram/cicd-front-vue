@@ -1,0 +1,11 @@
+test:
+  tags:
+    - myusine
+  script:
+    - echo "Test !"
+
+build:
+  tags:
+    - myusine
+  script:
+    - echo "Build !"
