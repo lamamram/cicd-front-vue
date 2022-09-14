@@ -17,6 +17,11 @@
    * multidisciplinarité
    * adaptation au changement
 
+
+## gestion de projet agile
+
+* on fixe les durées de cycle
+* et on adapte le scope en fonction
 ## SCRUM
 
 * schéma
