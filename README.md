@@ -7,5 +7,7 @@
 
 ## commandes vagrant
 
-* vagrant -v: version
-* vagrant up: lancer l'exécution du Vagrantfile dans le dossier courant 
+|cmd.                 |desc.                                          
+|:---------------------:|------------------------------------------------
+|vagrant -v           #version
+|vagrant up           |lancer l'exécution du Vagrantfile dans le dossier courant
