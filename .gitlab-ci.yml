@@ -1,16 +1,23 @@
 # image docker par défaut du pipeline => pour tous les jobs 
 image: node:lts-buster-slim
 
+# liste des étapes d'exécution des jobs
+stages:
+  - testing
+  - building
+
 test:
+  stage: testing
   tags:
     - myusine
   script:
     - npm -v
 
 build:
+  stage: building
   # image spécifique au job
-  image: python:rc-slim-buster
+  # image: python:rc-slim-buster
   tags:
     - myusine
   script:
-    - python3 -c 'print("hello")'
+    - node -e 'console.log("Hi")'
