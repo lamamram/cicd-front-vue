@@ -1,3 +1,4 @@
+# image docker par défaut du pipeline => pour tous les jobs 
 image: node:lts-buster-slim
 
 test:
@@ -7,6 +8,7 @@ test:
     - npm -v
 
 build:
+  # image spécifique au job
   image: python:rc-slim-buster
   tags:
     - myusine
