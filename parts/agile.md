@@ -16,3 +16,8 @@
    * culture de collaboration
    * multidisciplinarité
    * adaptation au changement
+
+## SCRUM
+
+* schéma
+![alt text](https://www.bocasay.com/wp-content/uploads/2022/02/Scrum-process-schema-FR-small.webp "SCRUM")
