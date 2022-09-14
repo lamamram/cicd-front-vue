@@ -18,3 +18,11 @@
 
 1. gitlab runner
   * spawn des runners qui exécutent des jobs de CI dans des conteneurs docker:
+  * exemple de syntaxe `gitlab-ci.yml`
+
+  ```yaml
+  test:
+    script:
+      - echo "TEST !"
+  ```
+
