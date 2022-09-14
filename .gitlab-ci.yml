@@ -1,6 +1,15 @@
 # image docker par défaut du pipeline => pour tous les jobs 
 image: node:lts-buster-slim
 
+# règles d'exécution du pipeline
+workflow:
+  # le pipeline ou le job se déclenche si au moins une règle est vraie
+  # OU logique
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push"
+    # - if: $CI_PIPELINE_SOURCE == "web"
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+
 # liste des étapes d'exécution des jobs
 stages:
   - testing
