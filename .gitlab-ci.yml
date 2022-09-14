@@ -7,7 +7,7 @@ workflow:
   # OU logique
   rules:
     - if: $CI_PIPELINE_SOURCE == "push"
-    # - if: $CI_PIPELINE_SOURCE == "web"
+    - if: $CI_PIPELINE_SOURCE == "web"
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
 
 # liste des étapes d'exécution des jobs
@@ -21,6 +21,13 @@ test:
     - myusine
   script:
     - npm -v
+  rules:
+    # ==, !=, pour les regex =~, !~
+    # une règle est vraie si toutes ses clauses sont vraies
+    # ET logique
+    - if: $CI_COMMIT_BRANCH =~ /feature[0-9]+/
+      changes:
+        - "*.md"
 
 build:
   stage: building
@@ -30,3 +37,6 @@ build:
     - myusine
   script:
     - node -e 'console.log("Hi")'
+  rules:
+    - if: $CI_COMMIT_BRANCH == "master"
+      when: manual
