@@ -14,7 +14,3 @@
 |vagrant up           |lancer l'exécution du Vagrantfile dans le dossier courant
 | vagrant halt        |stoppe correctement la VM
 |vagrant ssh          |pilote la commande ssh -P 2222 vagrant@gitlab.myusine.fr
-
-
-arelkfner arejfber lfbl rjfabe r
-amerjfnrej flreajfbjer fajerb 
