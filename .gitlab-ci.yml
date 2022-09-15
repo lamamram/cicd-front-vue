@@ -14,6 +14,7 @@ workflow:
 stages:
   - testing
   - building
+  - deploying
 
 test:
   stage: testing
@@ -38,5 +39,15 @@ build:
   script:
     - node -e 'console.log("Hi")'
   rules:
-    - if: $CI_COMMIT_BRANCH == "master"
+    - if: $CI_COMMIT_BRANCH =~ /feature[0-9]+/
+
+
+deploy:
+  stage: deploying
+  tags:
+    - myusine
+  script:
+    - echo "Deploy"
+  rules:
+    - if: $CI_COMMIT_TAG
       when: manual
