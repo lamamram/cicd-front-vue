@@ -48,6 +48,9 @@ deploy:
     - myusine
   script:
     - echo "Deploy"
+  environment:
+    name: prod
+    url: https://dawan.fr
   rules:
     - if: $CI_COMMIT_TAG
       when: manual
