@@ -30,3 +30,6 @@
 [^1]: 
   Cf les notions de culture d'entreprise, de dette culturelle,
   et de leadership devops
+
+
+  lkfnerlkfnelrknflernkflerf renfernflerknf ernfelrknfrel
