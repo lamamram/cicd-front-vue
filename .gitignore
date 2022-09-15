@@ -1,10 +1,21 @@
-# utilisation des wildcards * et **
-# *: toute suite de caractères
-# **: toutes suite de sous dossiers
-# utilisation partielle des expressions régulières
-.vscode/**/[sS]ettings*
-project
-# exception à une règle précédente
-!.vscode/project
-# ignore le dossier et son contenu
-.vscode/
+.DS_Store
+node_modules
+/dist
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
