@@ -95,5 +95,3 @@ input {
   text-align: center;
 }
 </style>
-
-
