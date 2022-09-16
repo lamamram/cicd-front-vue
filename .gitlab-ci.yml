@@ -85,7 +85,7 @@ lint:
   tags:
     - myusine
   script:
-    - echo "lint"
+    - npm run lint
   cache:
     key: cache npm
     untracked: true
