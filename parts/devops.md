@@ -26,3 +26,12 @@
       - echo "TEST !"
   ```
 
+---
+yaml config:
+  param: value
+  obj:
+    list:
+      - elem1
+      - elem2
+---
+
