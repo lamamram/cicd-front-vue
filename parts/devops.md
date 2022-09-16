@@ -26,6 +26,13 @@
       - echo "TEST !"
   ```
 
+2. exemple de pipeline
+  * image: node sur debian
+  * installation et cache des dépendances
+  * test unitaires plus rapport + couverture
+  * build
+  * déploiement
+
 ---
 yaml config:
   param: value

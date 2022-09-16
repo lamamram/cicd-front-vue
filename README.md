@@ -15,6 +15,10 @@
 | vagrant halt        |stoppe correctement la VM
 |vagrant ssh          |pilote la commande ssh -P 2222 vagrant@gitlab.myusine.fr
 
+## git
+
+- git log --grep="xxxxx" : sélectionne les commits dont le message contient "xxxxx"
+
 ## quotes
 
 > The most powerful tool we have as developers is automation.

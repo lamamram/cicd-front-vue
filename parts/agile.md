@@ -32,4 +32,7 @@
   et de leadership devops
 
 
-  lkfnerlkfnelrknflernkflerf renfernflerknf ernfelrknfrel
+* rôles:
+  - product owner: référent produit (client ou proxy)
+  - scrum master référent scrum (ordre du jour, suivi du sprint)
+  - équipe projet (devs, ops, ...)
