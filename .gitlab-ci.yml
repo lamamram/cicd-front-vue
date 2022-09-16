@@ -66,16 +66,30 @@ test:
     untracked: true
     policy: pull
 
-build:
+# "." désactive un job
+.build:
   stage: building
-  # image spécifique au job
-  # image: python:rc-slim-buster
   tags:
     - myusine
   script:
-    - node -e 'console.log("Hi")'
+    - npm run build
   rules:
     - if: $CI_COMMIT_BRANCH =~ /feature[0-9]+/
+  artifacts:
+    expire_in: "1 hour"
+    paths:
+      - dist/
+
+lint:
+  stage: building
+  tags:
+    - myusine
+  script:
+    - echo "lint"
+  cache:
+    key: cache npm
+    untracked: true
+    policy: pull
 
 
 deploy:
@@ -83,7 +97,7 @@ deploy:
   tags:
     - myusine
   script:
-    - echo "Deploy"
+    - echo "Deploy build in dist/"
   environment:
     name: prod
     url: https://dawan.fr

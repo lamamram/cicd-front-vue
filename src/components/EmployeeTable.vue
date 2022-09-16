@@ -16,35 +16,46 @@
       </thead>
       <tbody>
         <tr
-          :key="employee.id"
           v-for="employee in employees"
+          :key="employee.id"
         >
           <td v-if="editing === employee.id">
             <input
-              type="text"
               v-model="employee.name"
+              type="text"
             >
           </td>
-          <td v-else>{{employee.name}}</td>
+          <td v-else>
+            {{ employee.name }}
+          </td>
           <td v-if="editing === employee.id">
             <input
-              type="text"
               v-model="employee.email"
+              type="text"
             >
           </td>
-          <td v-else>{{employee.email}}</td>
+          <td v-else>
+            {{ employee.email }}
+          </td>
           <td v-if="editing === employee.id">
-            <button @click="editEmployee(employee)">Save</button>
+            <button @click="editEmployee(employee)">
+              Save
+            </button>
             <button
               class="muted-button"
               @click="cancelEdit(employee)"
-            >Cancel</button>
+            >
+              Cancel
+            </button>
           </td>
           <td v-else>
-            <button @click="editMode(employee)">Edit</button>
-            <button @click="$emit('delete:employee', employee.id)">Delete</button>
+            <button @click="editMode(employee)">
+              Edit
+            </button>
+            <button @click="$emit('delete:employee', employee.id)">
+              Delete
+            </button>
           </td>
-
         </tr>
       </tbody>
     </table>
@@ -53,7 +64,7 @@
 
 <script>
 export default {
-  name: 'employee-table',
+  name: 'EmployeeTable',
   props: {
     employees: Array,
   },
