@@ -58,6 +58,7 @@ test:
     # directement dans l'interface de gitlab
     reports:
       junit: artifacts/units.xml
+      cobertura: coverage/cobertura-coverage.xml 
   # on installe "pull" le cache npm contenant node_modules/
   # dans le conteneur avant l'exécution des commandes npm
   cache:

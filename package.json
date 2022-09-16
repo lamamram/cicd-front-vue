@@ -6,10 +6,11 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test": "vitest run --reporter=junit --outputFile=artifacts/units.xml"
+    "test": "vitest run --reporter=junit --outputFile=artifacts/units.xml --coverage"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^3.1.0",
+    "@vitest/coverage-istanbul": "^0.23.2",
     "@vue/compiler-dom": "^3.2.39",
     "@vue/test-utils": "^2.0.2",
     "core-js": "^3.25.1",
