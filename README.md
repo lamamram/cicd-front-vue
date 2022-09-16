@@ -18,3 +18,17 @@
 ## quotes
 
 > The most powerful tool we have as developers is automation.
+## insertion html/css
+
+<style>
+.green {
+    color: green;
+    font-weight:700;
+    font-size: 30px;
+}
+</style>
+
+<div class="green">
+    Markdown css styles
+</div>
+
